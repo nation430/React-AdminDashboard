@@ -1,0 +1,9 @@
+.sidebar{
+    flex: 1;
+    height: calc(100vh - 50px);
+    top:50px;
+}
+
+.sidebarWrapper{
+    color: #555;
+}

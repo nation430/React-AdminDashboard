@@ -1,10 +1,20 @@
-# Getting Started with Create React App
+# React Admin Dashboard template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my starter template for Admin-Dashboard using ReactJS with with Tailwindcss.
 
-## Available Scripts
+## Installations
+Clone this repository
+git clone https://github.com/nation430/React-AdminDashboard.git
+
+go to Reat-AminDashboard directory.
 
 In the project directory, you can run:
+
+
+### `npm install
+This will install all the dependencies of the app.
+Go to https://tailwindcss.com/docs/guides/create-react-app to set everything up
+
 
 ### `npm start`
 

@@ -1,0 +1,21 @@
+.widgetSm{
+    flex: 1;
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow:0px 0px 15px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -10px rgba(36, 19, 19, 0.75);
+}
+
+.widgetSmTitle{
+    font-size: 32px;
+}
+
+.widgetSmListItem{
+    margin: 20px 0px;
+}
+
+.widgetSmButton{
+    border:none;
+    padding:7px 10px;
+    background: #eeeef7;
+    color:#555;
+} 

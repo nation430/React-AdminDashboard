@@ -13,7 +13,7 @@ export default function Home(){
         <div className="home">
             <FeaturedInfo/>
             <Chart data={userData} dataKey = "Active User" title = "User Analytics" grid/>
-            <div className="widget flex m-5">
+            <div className="widget flex">
             <WidgetSm/>
             <WidgetLg/>
             </div>

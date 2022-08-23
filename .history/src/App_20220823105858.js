@@ -2,7 +2,7 @@ import Topbar from "./components/topbar/Topbar";
 import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./pages/home/Home";
 import "./app.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import UserList from "./pages/home/userList/UserList";
 
 function App() {
@@ -11,12 +11,14 @@ function App() {
       <Topbar />
       <div className="wrapper flex h-full">
         <Sidebar />
-        <Routes>
-          <Route exact path="/">
-            <Route path="/" element={<Home />} />
-            <Route path="users" element={<UserList />} />
+        <Switch>
+          <Route path="/">
+            <Home />
           </Route>
-        </Routes>
+          <Route path="/users">
+            <UserList />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );

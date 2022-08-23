@@ -2,8 +2,7 @@ import Topbar from "./components/topbar/Topbar";
 import Sidebar from "./components/sidebar/Sidebar";
 import Home from "./pages/home/Home";
 import "./app.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import UserList from "./pages/home/userList/UserList";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -11,12 +10,9 @@ function App() {
       <Topbar />
       <div className="wrapper flex h-full">
         <Sidebar />
-        <Routes>
-          <Route exact path="/">
-            <Route path="/" element={<Home />} />
-            <Route path="users" element={<UserList />} />
-          </Route>
-        </Routes>
+        <Route>
+          <Home />
+        </Route>
       </div>
     </Router>
   );

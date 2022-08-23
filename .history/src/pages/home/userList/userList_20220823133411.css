@@ -1,0 +1,8 @@
+.userList{
+    flex: 4;
+}
+
+.userListImg{
+    width: 32px;
+    height: 32px;
+}

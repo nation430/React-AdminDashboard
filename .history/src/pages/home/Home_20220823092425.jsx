@@ -9,7 +9,7 @@ import WidgetLg from "../../components/widgetLg/WidgetLg";
 export default function Home(){
     return (
         <div className="home">
-         <FeaturedInfo/>
+         <FeaturedInfo  o/>
             <Chart data={userData} dataKey = "Active User" title = "User Analytics" grid/>
             <div className="widget flex m-5">
             <WidgetSm/>

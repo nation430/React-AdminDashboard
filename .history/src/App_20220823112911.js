@@ -12,9 +12,9 @@ function App() {
       <div className="wrapper flex h-full">
         <Sidebar />
         <Routes>
-          <Route exact path="/">
+          <Route exact path="/" element={<App />}>
             <Route path="/" element={<Home />} />
-            <Route path="users" element={<UserList />} />
+            <Route exact path="users" element={<UserList />} />
           </Route>
         </Routes>
       </div>

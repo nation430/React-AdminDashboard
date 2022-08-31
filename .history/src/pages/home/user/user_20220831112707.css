@@ -70,6 +70,8 @@
 
 
 .userUpdateForm{
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -92,8 +94,9 @@
 }
 
 .userUpdateRight{
+  display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
 }
 
 .userUpdateUpload{
@@ -109,10 +112,6 @@
   margin-right: 20px;
 }
 
-
-.userUpdateButton{
-  border-radius: 5px;
-  border: none;
-  padding: 5px;
-  background-color: darkblue;
+.userUpdateIcon{
+  cursor: pointer;
 }

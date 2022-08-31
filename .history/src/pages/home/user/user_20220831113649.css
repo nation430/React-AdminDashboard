@@ -70,6 +70,8 @@
 
 
 .userUpdateForm{
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -92,13 +94,9 @@
 }
 
 .userUpdateRight{
-  flex-direction: column;
-
-}
-
-.userUpdateUpload{
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .userUpdateImg{

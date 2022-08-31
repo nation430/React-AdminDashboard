@@ -1,7 +1,5 @@
 import "./user.css";
-import {MdPermIdentity,  MdCalendarToday, MdPhoneAndroid, MdMailOutline, MdLocationSearching, MdPublish } from "react-icons/md";
-import { Link } from "react-router-dom";
-
+import {MdPermIdentity,  MdCalendarToday, MdPhoneAndroid, MdMailOutline, MdLocationSearching } from "react-icons/md";
 
 export default function User(){
     return(
@@ -9,11 +7,7 @@ export default function User(){
         <div className="user">
             <div className="userTitleContainer flex items-center justify-between">
                 <h1 className="userTitle">Edit User</h1>
-
-                <Link to = "/newUser">
                 <button className="userAddButton border-none cursor-pointer---">Create</button>
-                </Link>
-              
             </div>
             <div className="userContainer flex">
             <div className="userShow">
@@ -54,15 +48,18 @@ export default function User(){
           </div>
             </div>
 
-         <div className="userUpdate">
+
+              <div className="userUpdate">
+
+              <div className="userUpdate">
           <span className="userUpdateTitle">Edit</span>
-          <form className="userUpdateForm flex justify-between">
+          <form className="userUpdateForm">
             <div className="userUpdateLeft">
               <div className="userUpdateItem">
                 <label>Username</label>
                 <input
                   type="text"
-                  placeholder="annanation430"
+                  placeholder="annabeck99"
                   className="userUpdateInput"
                 />
               </div>
@@ -70,7 +67,7 @@ export default function User(){
                 <label>Full Name</label>
                 <input
                   type="text"
-                  placeholder="Anna Nation"
+                  placeholder="Anna Becker"
                   className="userUpdateInput"
                 />
               </div>
@@ -78,7 +75,7 @@ export default function User(){
                 <label>Email</label>
                 <input
                   type="text"
-                  placeholder="annanation430@gmail.com"
+                  placeholder="annabeck99@gmail.com"
                   className="userUpdateInput"
                 />
               </div>
@@ -99,7 +96,7 @@ export default function User(){
                 />
               </div>
             </div>
-            <div className="userUpdateRight flex justify-between">
+            <div className="userUpdateRight">
               <div className="userUpdateUpload">
                 <img
                   className="userUpdateImg"
@@ -107,14 +104,18 @@ export default function User(){
                   alt=""
                 />
                 <label htmlFor="file">
-                  <MdPublish className="userUpdateIcon cursor-pointer ..." />
+                  <Publish className="userUpdateIcon" />
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
-              <button className="userUpdateButton cursor-pointer ...  font-semibold text-white" >Update</button>
+              <button className="userUpdateButton">Update</button>
             </div>
           </form>
         </div>
+    
+
+
+              </div>
               </div>
             </div>
       

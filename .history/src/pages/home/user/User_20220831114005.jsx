@@ -1,7 +1,5 @@
 import "./user.css";
-import {MdPermIdentity,  MdCalendarToday, MdPhoneAndroid, MdMailOutline, MdLocationSearching, MdPublish } from "react-icons/md";
-import { Link } from "react-router-dom";
-
+import {MdPermIdentity,  MdCalendarToday, MdPhoneAndroid, MdMailOutline, MdLocationSearching, MdOutlinePublishedWithChanges } from "react-icons/md";
 
 export default function User(){
     return(
@@ -9,11 +7,7 @@ export default function User(){
         <div className="user">
             <div className="userTitleContainer flex items-center justify-between">
                 <h1 className="userTitle">Edit User</h1>
-
-                <Link to = "/newUser">
                 <button className="userAddButton border-none cursor-pointer---">Create</button>
-                </Link>
-              
             </div>
             <div className="userContainer flex">
             <div className="userShow">
@@ -107,7 +101,7 @@ export default function User(){
                   alt=""
                 />
                 <label htmlFor="file">
-                  <MdPublish className="userUpdateIcon cursor-pointer ..." />
+                  <MdOutlinePublishedWithChanges className="userUpdateIcon cursor-pointer ..." />
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>

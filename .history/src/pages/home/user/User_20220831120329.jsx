@@ -1,7 +1,5 @@
 import "./user.css";
 import {MdPermIdentity,  MdCalendarToday, MdPhoneAndroid, MdMailOutline, MdLocationSearching, MdPublish } from "react-icons/md";
-import { Link } from "react-router-dom";
-
 
 export default function User(){
     return(

@@ -70,6 +70,8 @@
 
 
 .userUpdateForm{
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -89,30 +91,4 @@
   width: 250px;
   height: 30px;
   border-bottom: 1px solid gray;
-}
-
-.userUpdateRight{
-  flex-direction: column;
-
-}
-
-.userUpdateUpload{
-  display: flex;
-  align-items: center;
-}
-
-.userUpdateImg{
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  object-fit: cover;
-  margin-right: 20px;
-}
-
-
-.userUpdateButton{
-  border-radius: 5px;
-  border: none;
-  padding: 5px;
-  background-color: darkblue;
 }

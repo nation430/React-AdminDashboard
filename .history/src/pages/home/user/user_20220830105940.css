@@ -1,0 +1,14 @@
+.user{
+    flex: 4;
+    padding: 20px;
+  }
+
+  .userAddButton{
+      width:80px;
+      padding:5px;
+      background: teal;
+      border-radius: 5px;
+      color:white;
+      font-size: 16px;
+
+  }

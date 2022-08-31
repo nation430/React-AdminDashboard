@@ -1,0 +1,9 @@
+.user{
+    flex: 4;
+    padding: 20px;
+  }
+
+  .userAddButton{
+      width:80px;
+
+  }

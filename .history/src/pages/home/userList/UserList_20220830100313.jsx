@@ -8,10 +8,6 @@ import { useState } from "react";
 export default function UserList(){
   const [data, setData] = useState(userRows);
 
-  const handleDelete = (id) => {
-    setData(data.filter((item) => item.id !== id));
-  };
-
   const columns = [
     { field: 'id', headerName: 'ID', width: 90 },
     { field: 'user',
@@ -47,7 +43,7 @@ export default function UserList(){
              <Link to={"/user/" + params.row.id}>
               <button className="userListEdit border-none text-white">Edit</button>
             </Link>
-              <MdOutlineDeleteOutline className="userListDelete text-red-700 text-lg cursor-pointer ..."    onClick={() => handleDelete(params.row.id)}/>
+              <MdOutlineDeleteOutline className="userListDelete text-red-700 text-lg cursor-pointer ..."/>
             </>
           );
 
@@ -59,7 +55,7 @@ export default function UserList(){
     return(
         <div className="userList">
           <DataGrid
-        rows={data}
+      rows={data}
         disableSelectionOnClick
         columns={columns}
         pageSize={8}

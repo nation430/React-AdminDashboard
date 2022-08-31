@@ -1,0 +1,131 @@
+import "./userList.css"
+import { DataGrid } from '@mui/x-data-grid';
+import Avatar from '@mui/material/Avatar';
+
+
+export default function UserList(){
+
+  const columns = [
+    { field: 'id', headerName: 'ID', width: 90 },
+    { field: 'user',
+     headerName: 'User', 
+     width: 200,
+     renderCell: (params) =>{
+      return(
+        <div className="userListUser flex items-center">
+        <img className="userListImg w-6 h-6 rounded-full object-cover" src={params.row.avatar} alt="" />
+        {params.row.userName}
+      </div>
+      )
+    } },
+    { field: 'email', headerName: 'Email', width: 200 },
+    {
+      field: 'status',
+      headerName: 'Status',
+      width: 120,
+    },
+    {
+      field: 'transaction',
+      headerName: 'Transaction Volume',
+      width: 160,
+    },
+    
+  ];
+  
+  const rows = [
+    { id: 1,
+       userName: 'Jon Snow',
+        avater: "./images/member1.jpg",
+        email: "jon@gmail.com",
+        status: "active" ,
+        transaction: "$120.00"
+      },
+
+      { id: 2,
+        userName: 'Jon Snow',
+         avater: "https://assets.materialup.com/uploads/bebad102-7f40-4941-99cd-54366113003e/avatar-08.png",
+         email: "jon@gmail.com",
+         status: "active" ,
+         transaction: "$120.00"
+       },
+
+       { id: 3,
+        userName: 'Jon Snow',
+         avater: ' <img src="images/member1.jpg" alt="image" />',
+         email: "jon@gmail.com",
+         status: "active" ,
+         transaction: "$120.00"
+       },
+
+       { id: 4,
+        userName: 'Jon Snow',
+         avater: ' <img src="images/member1.jpg" alt="image"/>',
+         email: "jon@gmail.com",
+         status: "active" ,
+         transaction: "$120.00"
+       },
+
+       { id: 5,
+        userName: 'Jon Snow',
+         avater: ' <img src="images/member1.jpg" alt="image"/>',
+         email: "jon@gmail.com",
+         status: "active" ,
+         transaction: "$120.00"
+       },
+
+       { id: 6,
+        userName: 'Jon Snow',
+         avater: ' <img src="images/member1.jpg" alt="image"/>',
+         email: "jon@gmail.com",
+         status: "active" ,
+         transaction: "$120.00"
+       },
+
+       { id: 7,
+        userName: 'Jon Snow',
+         avater: ' <img src="images/member1.jpg" alt="image"/>',
+         email: "jon@gmail.com",
+         status: "active" ,
+         transaction: "$120.00"
+       },
+
+       { id: 8,
+        userName: 'Jon Snow',
+         avater: ' <img src="images/member1.jpg" alt="image"/>',
+         email: "jon@gmail.com",
+         status: "active" ,
+         transaction: "$120.00"
+       },
+
+
+       { id: 9,
+        userName: 'Jon Snow',
+         avater: ' <img src="images/member1.jpg" alt="image" />',
+         email: "jon@gmail.com",
+         status: "active" ,
+         transaction: "$120.00"
+       },
+
+       { id: 10,
+        userName: 'Jon Snow',
+         avater: ' <img src="images/member1.jpg" alt="image" />',
+         email: "jon@gmail.com",
+         status: "active" ,
+         transaction: "$120.00"
+       },
+  
+  ];
+
+
+    return(
+        <div className="userList">
+          <DataGrid
+        rows={rows}
+        columns={columns}
+        pageSize={5}
+        rowsPerPageOptions={[5]}
+        checkboxSelection
+      />
+        </div>
+    )
+}

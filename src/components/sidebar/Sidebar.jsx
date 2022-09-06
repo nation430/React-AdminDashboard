@@ -2,6 +2,7 @@ import "./sidebar.css";
 import { MdLineStyle, MdOutlineTimeline, MdTrendingUp, MdStorefront, MdAttachMoney, MdOutlineMail, MdDynamicFeed, MdWorkOutline, MdReport} from "react-icons/md";
 import { HiOutlineUser} from "react-icons/hi";
 import { FiBarChart2, FiMessageSquare} from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function sidebar(){
     return(
@@ -11,10 +12,12 @@ export default function sidebar(){
             <div className="sidebarMenu mb-2.5">
                 <h3 className="sidebarTitle">Dashboard</h3>
                 <ul className="sidebarList px-4 py-0">
+                <Link to="/" className="link">
                     <li className="sidebarListItems flex items-center">
                     <MdLineStyle className="sidebarIcon"/>
                     Home
                     </li>
+                    </Link>
 
                     <li className="sidebarListItems flex items-center">
                     <MdOutlineTimeline className="sidebarIcon" />
@@ -33,15 +36,19 @@ export default function sidebar(){
             <div className="sidebarMenu mb-2.5">
                 <h3 className="sidebarTitle">Quick Menu</h3>
                 <ul className="sidebarList px-4 py-1">
+                <Link to="/users" className="link">
                     <li className="sidebarListItems flex items-center">
                     <HiOutlineUser className="sidebarIcon" />
                     Users
                     </li>
+                    </Link>
 
+                   <Link to="/products" className="link">
                     <li className="sidebarListItems flex  items-center" >
                     <MdStorefront className="sidebarIcon" />
                     Products
                     </li>
+                    </Link>
 
                     <li className="sidebarListItems flex items-center">
                     <MdAttachMoney className="sidebarIcon" />
